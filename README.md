@@ -159,26 +159,17 @@ pip install python-dotenv
 
 ## 📸 Скриншоты
 
-> 🖼️ *Здесь будут размещены скриншоты интерфейса бота*
-
 ### Главное меню
-```
-[ МЕСТО ДЛЯ СКРИНШОТА: главное меню с кнопками "Погода", "Токсичность", "Курсы валют" ]
-```
+![Главное меню](screenshots/main_menu.png)
 
 ### Погода
-```
-[ МЕСТО ДЛЯ СКРИНШОТА: результат поиска погоды по городу ]
-```
+![Погода](screenshots/weather.png)
 
 ### Анализ токсичности
-```
-[ МЕСТО ДЛЯ СКРИНШОТА: пример анализа текста с выводом процентов ]
-```
+![Токсичность](screenshots/toxicity.png)
 
 ### Курсы валют
-```
-[ МЕСТО ДЛЯ СКРИНШОТА: таблица курсов с флагами ]
+![Валюты](screenshots/currency.png)
 ```
 
 ---
@@ -213,25 +204,6 @@ pip install pyTelegramBotAPI requests transformers torch sentencepiece
 
 ---
 
-## 🗂 Структура проекта
-
-```
-📦 telegram-bot-weather-toxicity-currency/
-├── 📄 main.py                 # Основной файл с логикой бота
-├── 📄 requirements.txt        # Зависимости Python
-├── 📄 README.md              # Этот файл
-├── 📄 .gitignore             # Исключаемые файлы
-├── 📄 .env                   # Переменные окружения (не коммитить!)
-├── 📁 screenshots/           # Папка для скриншотов
-│   ├── main_menu.png
-│   ├── weather_result.png
-│   ├── toxicity_analysis.png
-│   └── currency_rates.png
-└── 📁 logs/                  # Логи (опционально)
-```
-
----
-
 ## 🛠 Разработка и запуск
 
 ### Локальный запуск
@@ -244,26 +216,6 @@ python main.py
 
 ```bash
 nohup python main.py > bot.log 2>&1 &
-```
-
-### Использование systemd (production)
-
-Создайте файл `/etc/systemd/system/telegram-bot.service`:
-
-```ini
-[Unit]
-Description=Telegram Weather/Toxicity/Currency Bot
-After=network.target
-
-[Service]
-User=your_user
-WorkingDirectory=/path/to/project
-ExecStart=/path/to/venv/bin/python main.py
-Restart=always
-RestartSec=10
-
-[Install]
-WantedBy=multi-user.target
 ```
 
 Активация:
@@ -297,17 +249,9 @@ sudo systemctl start telegram-bot
 
 ---
 
-## 📄 Лицензия
-
-Этот проект распространяется под лицензией MIT. Подробнее — см. файл [LICENSE](LICENSE).
-
----
-
 ## 👨‍💻 Автор
 
-> [Ваше имя / никнейм]  
-> 📧 [Ваш email]  
-> 🔗 [GitHub / Telegram / Сайт]
+> [Каспранов Камиль / Лузянин Даниил]
 
 ---
 
@@ -315,4 +259,3 @@ sudo systemctl start telegram-bot
 
 ---
 
-*Если проект был полезен — поставьте ⭐ на GitHub!* 🚀
