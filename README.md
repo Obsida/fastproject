@@ -159,18 +159,15 @@ pip install python-dotenv
 
 ## 📸 Скриншоты
 
-### Главное меню
-![Главное меню](screenshots/main_menu.png)
-
 ### Погода
-![Погода](screenshots/weather.png)
+![Погода](pogoda.png)
 
 ### Анализ токсичности
-![Токсичность](screenshots/toxicity.png)
+![Токсичность](tox1.png)
+![Токсичность](tox2.png)
 
 ### Курсы валют
-![Валюты](screenshots/currency.png)
-```
+![Валюты](valuta.png)
 
 ---
 
